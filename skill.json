@@ -1,0 +1,32 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "K92.3 Second Date Update",
+          "summary": "Hear K92.3 Orlando's Second Date Update live — Obie, Chloe and Slater's signature morning bit.",
+          "description": "Play K92.3 Orlando country live and jump straight to the Second Date Update. Say 'Alexa, play K92.3 Second Date Update' and it starts. No setup, no skill to enable.",
+          "examplePhrases": [
+            "Alexa, play K92.3 Second Date Update",
+            "Alexa, play K nine two point three Second Date Update",
+            "Alexa, play Second Date Update on K92.3"
+          ],
+          "keywords": ["K92.3", "country", "Orlando", "Second Date Update", "Obie", "radio"]
+        }
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "Say 'Alexa, play K92.3 Second Date Update' on any Echo in the US. Station should stream live immediately. Also test alternate names: 'K nine two point three', 'WWKA'.",
+      "category": "NEWS_AND_INFORMATION",
+      "distributionCountries": ["US"]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:ACCOUNT:function:k923-second-date"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}
